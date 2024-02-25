@@ -1,0 +1,37 @@
+.checkout {
+    .pay-methods {
+        .method {
+            padding: 50px 0;
+            border-radius: 10px;
+            margin: 15px 0;
+            border: 1px solid #999;
+            cursor: pointer;
+            transition: .35s ease-in-out;
+            &.active {
+                border-bottom: 4px solid $mainColor;
+            }
+            &:not(.active):hover {
+                transform: translateY(-7px);
+            }
+            img {
+                width: 120px;
+            }
+        }
+    }
+    form {
+        &:not(.active) {
+            display: none;
+        }
+        .form-control {
+            padding: 1.6rem 20px;
+            border-radius: 10px !important;
+        }
+        label {
+            margin: 0;
+            padding: 0;
+            font-size: 13px;
+            font-weight: bold;
+            font-family: "Nunito";
+        }
+    }
+}

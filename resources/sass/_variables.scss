@@ -1,0 +1,106 @@
+// Body
+$body-bg: #fff;
+
+// Typography
+$font-family-sans-serif: 'Nunito', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Colors
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+
+
+
+$mainColor: rgb(23, 106, 184);
+
+
+.special-heading {
+    font-size: 42px;
+    font-family: "Ubuntu";
+    font-weight: bold;
+    color: rgb(77, 77, 77);
+    span {
+        color: $mainColor;
+    }
+}
+
+%main-button {
+    display: inline-block;
+    padding: 17px 35px;
+    border: 2px solid $mainColor;
+    border-radius: 30px;
+    text-decoration: none !important;
+    
+    font-weight: bold;
+}
+.main-btn {
+    @extend %main-button;
+    color: #fff;
+    background-color: $mainColor;
+    &:hover {
+        color: #fff;
+    }
+
+}
+.main-btn-transparent {
+    @extend %main-button;
+    color: $mainColor;
+    background-color: transparent;
+    &:hover {
+        color: $mainColor;
+    }
+}
+
+
+p.p-content {
+    line-height: 1.9;
+    // text-align: center;
+    font-size: 22px;
+    color: rgb(131, 130, 130);
+}
+
+.img-radius {
+    border-radius: 30px;
+}
+
+
+
+
+
+
+.seamless-bg {
+    background: url('/imgs/seamless.jpg');
+}
+
+
+.seamless-overlay {
+    background-color: rgba(27,60,165,.6);
+    backdrop-filter: blur(3px);
+    min-height: 100vh;
+}
+
+
+
+.form-control.customized {
+    font-size: 14px;
+}
+input.form-control.customized {
+    padding: 1.5rem 10px;
+
+}
+
+
+form .form-group label {
+    font-family: "Nunito";
+    font-weight: bold;
+    font-size: 13px;
+}

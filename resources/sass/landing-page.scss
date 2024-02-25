@@ -1,0 +1,193 @@
+
+// ------------------------------- start main header -------------- //
+.main-header {
+    height: 100vh;
+    background: #f4f4f4;
+
+    .header-content {
+        .header-quot {
+            @extend .special-heading;
+            line-height: 1.6;   
+            font-size: 38px !important;
+        }
+        a i {
+            font-size: 20px;
+            animation: animateArrowButton 1s infinite;
+        }
+        .header-img img:not(.active) { display: none; }
+    }
+}
+@keyframes animateArrowButton {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        padding-left: 10px;
+        opacity: 0;
+    }
+}
+// ------------------------------- end main header -------------- //
+
+
+
+
+
+
+// ------------------------------- start courses -------------- //
+.courses .course {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 1px 1px 13px #ccc;
+    .img img {
+        height: 300px;
+        border-radius: 20px;
+        
+    } 
+    .heading {
+        font-family: "Montserrat";
+        color: $mainColor;
+        font-size: 25px;
+        font-weight: bold;
+        padding: 30px 0;
+    }
+    .course-content {
+        padding: 20px;
+    }
+}
+// ------------------------------- end courses -------------- //
+
+
+
+
+
+// ------------------------------- start plans -------------- //
+.plans {
+    .plan {
+        border: 1px solid #ccc;
+        border-radius: 30px;
+        ul.features li {
+            list-style: none;
+            i {
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                margin: 5px 0;
+                color: rgb(100, 177, 23);
+                font-size: 22px;
+                margin-right: 8px;
+                border-radius: 50%;
+                background: #f8f9fa;
+            }
+            font-family: "Montserrat";
+            color: rgb(148, 147, 147);
+        }
+    }
+    
+}
+// ------------------------------- end plans -------------- //
+
+
+
+
+
+
+
+
+.section-devider {
+    background: url('/imgs/quran-xx.jpg');
+    height: 200px;
+    background-size: cover;
+    background-attachment: fixed;
+    .overlay {
+        background: rgba(0,0,0,.5);
+        // backdrop-filter: blur(8px);
+        height: 200px;
+    }
+}
+
+
+
+
+
+
+// ------------------------------- start contact section -------------- //
+.contact-wrapper {
+    .panel {
+        &.up { 
+            transform: translateY(-150px);
+        }
+        .special-heading { font-size: 35px !important; }
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 15px;
+        .panel-heading {
+            @extend .special-heading;
+            font-size: 20px !important;
+        }
+    }
+    form {
+        .form-control {
+            font-size: 14px;
+        }
+        input.form-control {
+            padding: 1.5rem 10px;
+
+        }
+        input[type="submit"] {
+            font-size: 17px !important;
+        }
+    }
+    .contact-infos {
+        .box {
+            padding: 20px 0;
+            &:not(:last-child) {
+                border-bottom: 1px solid #ccc;
+            }
+            .icon {
+                float: left;
+                width: 100px;
+                text-align: center;
+                i {
+                    color: $mainColor;
+                    font-size: 40px;
+
+                }
+            }
+            .link {
+                font-size: 16px;
+                font-family: "Poppins";
+                font-weight: bold;
+            }
+        }
+    }
+}
+@media(max-width: 720px) {
+    .contact-infos .icon i {
+        font-size: 25px !important;
+    }
+    .contact-infos {
+        .icon {
+            float: none !important;
+            display: block;
+            text-align: center;
+            padding-bottom: 10px;
+            width: 100% !important;
+        }
+        .link {
+            text-align: center;
+        }
+        transform: translateY(-100px);
+    }
+}
+// ------------------------------- end contact section -------------- //
+
+
+@media (max-width: 770px) {
+    .navbar .nav-item {
+        padding: 5px !important;
+    }
+    .navbar .nav-item:hover {
+        border-color: transparent;
+    }
+}

@@ -1,0 +1,39 @@
+
+
+
+
+
+// ------------------------------- start login -------------- //
+.login-form {
+    background-color: #fff;
+    box-shadow: 1px 2px 17px #7f89f0;
+    padding: 20px;
+    border-radius: 25px;
+    margin: auto;
+
+    &:not(.register) {
+        max-width: 400px;
+    }
+    &.register {
+        max-width: 500px;
+    }
+  
+    
+    .form-group .form-control {
+        padding: 1.5rem 15px; 
+    }
+    .password-box {
+        position: relative;
+        span.toggle-password {
+            i {
+                position: absolute;
+                transform: translateY(-35px);
+                right: 15px;
+                font-size: 20px;
+                color: rgb(80, 80, 80);
+                cursor: pointer;
+            }
+        }
+    }
+}
+// ------------------------------- end login -------------- //
