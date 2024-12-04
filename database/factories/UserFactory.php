@@ -15,7 +15,7 @@ class UserFactory extends Factory
      */
     protected $model = User::class;
 
-    /**
+    /** factory est utilisé pour tests  des donnees fictives
      * Define the model's default state.
      *
      * @return array

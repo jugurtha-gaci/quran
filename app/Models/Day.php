@@ -14,7 +14,8 @@ class Day extends Model
     public function group() {
         return $this->belongsTo(Group::class);
     }
-
+//propriete de laravel
+//utiliser pour proteger les attributs contre la assignation en masse non desirer
     protected $fillable = [
         "day",
         'start_time',

@@ -7,7 +7,7 @@ use App\Models\Setting;
 use App\Models\Streaming;
 use Willywes\AgoraSDK\RtcTokenBuilder;
 use phpDocumentor\Reflection\Types\Boolean;
-
+//obtenir jeton d'authentification dans laravel
 class Helper
 {
     public static function GetAgoraToken($user_id, $ch) {
@@ -54,7 +54,7 @@ class Helper
 
         }
 
-        $dateOfNextSession = Carbon::now()->next($days[$next_session])->addWeeks(1);
+        $dateOfNextSession = Carbon::now()->next($days[$next_session]);
 
         return $dateOfNextSession;
     

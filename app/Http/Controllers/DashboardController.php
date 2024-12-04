@@ -31,7 +31,7 @@ class DashboardController extends Controller
             "message" => $request->message
         ];
 
-        Mail::to("aissambrs3@gmail.com")->send(new Contact($data));
+        Mail::to("dalila.zeghmich@univ-bouira.dz")->send(new Contact($data));
         return Redirect::to(URL::previous() . "#contact")->with(['success' => 'Contact Form Submit Successfully']);
     }
    

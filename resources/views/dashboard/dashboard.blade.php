@@ -302,17 +302,17 @@
                     }
                 });
 
-                $.ajax({
-                    method: 'POST',
-                    url: "{{ route('dashboard.check-deprecated-video') }}",
-                    headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
-                    success: function(data) {
-                        if(data > 0) {
-                            window.location.reload();
+                // $.ajax({
+                //     method: 'POST',
+                //     url: "{{ route('dashboard.check-deprecated-video') }}",
+                //     headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
+                //     success: function(data) {
+                //         if(data > 0) {
+                //             window.location.reload();
                             
-                        }
-                    }
-                })
+                //         }
+                //     }
+                // })
 
             }, 1000);
             

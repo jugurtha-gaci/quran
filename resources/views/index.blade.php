@@ -146,7 +146,7 @@
                                         <i style="color: rgb(21, 77, 168)" class="fab fa-whatsapp"></i>
                                     </div>
                                     <div class="link">
-                                        +213 5 41 15 67 61
+                                        +213 x xx xx xx
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
